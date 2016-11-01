@@ -13,15 +13,15 @@
 
 		<!-- Echo all executed SQL to stdout -->
 		<property name="show_sql">false</property>
-		
+
 		<!-- Drop and re-create the database schema at startup -->
-		<property name="hibernate.hbm2ddl.auto">create</property>
-		
+		<property name="hibernate.hbm2ddl.auto">update</property>
+
 		<!-- Mappings -->
 		<mapping resource="pl/edu/agh/ki/bd/htmlIndexer/model/Sentence.hbm.xml" />
 		<mapping resource="pl/edu/agh/ki/bd/htmlIndexer/model/ProcessedUrl.hbm.xml" />
 
-</session-factory>
+	</session-factory>
 </hibernate-configuration>
 
 
